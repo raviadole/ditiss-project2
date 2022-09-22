@@ -1,0 +1,40 @@
+.content{
+	max-width:500px;
+	margin:auto;
+	padding:10px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 1px 1px 20px 0px #ccc;
+}
+
+td {
+  text-align: center;
+}
+th, td {
+  padding: 15px;
+}
+tr{background-color: #f2f2f2;}
+thead.tbl-header tr {
+    background: #bbb5b5!important;
+}
+td.delete-btn a{
+    background-color: #ab0808fc;
+    color: white;
+    padding: 6px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+p.add-profile {
+    text-align: left;
+    font-size: 18px;
+}
+a.add-btn {
+    padding: 10px 25px;
+    background-image: linear-gradient(to right, #a59e9e , #0a0a0a);
+    border-radius: 9px;
+    color: white;
+    text-decoration: none;
+}
