@@ -42,8 +42,13 @@ def user_login():
 	print("Email: ", email_id)
 	print("pw: ", pw)
 	if email_id and pw:
-		profiles = Profile.query.all()
-		return render_template('view_users.html',profiles=profiles)
+		user = Profile.query.filter_by(email=email_id).first()
+		print("Login User: ",user)
+		if user:
+			profiles = Profile.query.all()
+			return render_template('view_users.html',profiles=profiles)
+		else:
+			return render_template('index.html')
 	else:
 		return render_template('index.html')
 # function to render index page
